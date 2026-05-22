@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore all services at Bombay Hair Art — haircuts, coloring, keratin, beard grooming, facials, and bridal packages in Rajkot." />
+  <title>Services | Bombay Hair Art — Rajkot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loader-logo">Bombay <span>Hair Art</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p class="loader-tagline">Where Art Meets Elegance</p>
+</div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html" class="active">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Book Appointment</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-top: var(--nav-height);">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1920&q=80');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-label">What We Offer</span>
+    <h1>Our <span>Services</span></h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span><i class="fas fa-chevron-right" style="font-size:0.7rem;"></i></span>
+      <span>Services</span>
+    </nav>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">Premium Services</span>
+      <h2 class="section-title">Crafted for <span>Perfection</span></h2>
+      <div class="gold-divider center"></div>
+      <p class="section-subtitle">Every service is delivered with precision, premium products, and a passion for making you look and feel your absolute best.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="gallery-filters" style="justify-content:center; margin-bottom:48px;" role="group" aria-label="Service category filter">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="hair">Hair</button>
+      <button class="filter-btn" data-filter="beard">Beard</button>
+      <button class="filter-btn" data-filter="skin">Skin</button>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid" id="services-grid">
+
+      <!-- 1. Haircut & Styling -->
+      <article class="service-card reveal delay-1" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Haircut and Styling" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-cut"></i></div>
+          <h3 class="service-card-title">Haircut & Styling</h3>
+          <p class="service-card-desc">Precision cuts tailored to your face shape, hair texture, and lifestyle. Our master stylists consult with you to craft a look that's uniquely yours. Includes wash, cut, blow-dry, and finish.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹299 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 45 minutes</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Hair Coloring -->
+      <article class="service-card reveal delay-2" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" alt="Hair Coloring" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="service-card-title">Hair Coloring</h3>
+          <p class="service-card-desc">From vibrant global colors to subtle balayage, highlights, and ombre — our color specialists use premium L'Oréal and Wella products for rich, long-lasting results that protect your hair's health.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹1,499 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 2–3 hours</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Keratin Treatment -->
+      <article class="service-card reveal delay-3" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80" alt="Keratin Treatment" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-magic"></i></div>
+          <h3 class="service-card-title">Keratin Treatment</h3>
+          <p class="service-card-desc">Eliminate frizz, restore shine, and achieve silky-smooth hair with our professional keratin treatments. Using Brazilian Blowout and Cezanne formulas, results last 4–6 months with proper care.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹3,999 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 3–4 hours</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Hair Spa -->
+      <article class="service-card reveal delay-1" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" alt="Hair Spa" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-spa"></i></div>
+          <h3 class="service-card-title">Hair Spa</h3>
+          <p class="service-card-desc">A deeply nourishing treatment that repairs damage, restores moisture, and revitalizes your scalp. Includes a relaxing head massage, deep conditioning mask, and steam therapy for maximum absorption.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹799 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 1 hour</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Hair Smoothening -->
+      <article class="service-card reveal delay-2" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" alt="Hair Smoothening" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-wind"></i></div>
+          <h3 class="service-card-title">Hair Smoothening</h3>
+          <p class="service-card-desc">Achieve permanently straight, frizz-free hair with our advanced smoothening treatments. Using Schwarzkopf and Matrix professional formulas for results that last up to 8 months.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹4,999 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 4–5 hours</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Beard Grooming -->
+      <article class="service-card reveal delay-3" data-category="beard">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Beard Grooming" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Beard</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-user-tie"></i></div>
+          <h3 class="service-card-title">Beard Grooming</h3>
+          <p class="service-card-desc">Expert beard shaping, trimming, and styling by our grooming specialists. Includes hot towel treatment, precision razor work, beard oil conditioning, and styling for a sharp, defined look.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹199 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 30 minutes</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. Facial Treatment -->
+      <article class="service-card reveal delay-1" data-category="skin">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80" alt="Facial Treatment" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Skin</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-star"></i></div>
+          <h3 class="service-card-title">Facial Treatment</h3>
+          <p class="service-card-desc">Customized facials using premium Dermalogica and VLCC products. Our skin specialists analyze your skin type and craft a treatment that cleanses, exfoliates, and nourishes for a radiant, youthful glow.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹599 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> 1 hour</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Bridal Package -->
+      <article class="service-card reveal delay-2" data-category="hair">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80" alt="Bridal Package" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Bridal</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-crown"></i></div>
+          <h3 class="service-card-title">Bridal Package</h3>
+          <p class="service-card-desc">The ultimate full-day luxury experience for your most special day. Includes bridal hair styling, makeup, pre-bridal facial, mehendi prep, and a trial session. Our bridal team ensures you look absolutely breathtaking.</p>
+          <div class="service-card-meta">
+            <div>
+              <div class="service-price">₹9,999 onwards</div>
+              <div class="service-duration"><i class="fas fa-clock"></i> Full Day</div>
+            </div>
+            <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section-pad" style="background:var(--black-soft);">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">Got Questions?</span>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <div class="gold-divider center"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">Do I need to book an appointment in advance? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">While we do accept walk-ins based on availability, we strongly recommend booking an appointment to guarantee your preferred time slot and stylist. You can book online, call us, or message us on WhatsApp.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">What hair color brands do you use? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We exclusively use premium professional brands including L'Oréal Professionnel, Wella Professionals, Schwarzkopf Professional, and Kerastase. All products are 100% authentic and sourced directly from authorized distributors.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">How long does a keratin treatment last? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">A professional keratin treatment at Bombay Hair Art typically lasts 4–6 months with proper care. We recommend using sulfate-free shampoos and avoiding excessive heat styling to maximize the longevity of your treatment.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">Do you offer a consultation before the service? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely! Every service begins with a thorough consultation where our specialists understand your goals, assess your hair or skin condition, and recommend the best treatment plan. For color and chemical services, we also conduct a patch test 48 hours prior.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">What is your cancellation policy? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We request at least 4 hours notice for cancellations or rescheduling. For bridal packages and special treatments, we require 24 hours notice. You can cancel or reschedule by calling us or sending a WhatsApp message.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">Is parking available near the salon? <span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, there is ample parking available near our salon on Kasturba Road. The Jubilee Garden parking area is just a 2-minute walk from our entrance. We also have a small dedicated parking space for our clients right outside the salon.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Ready to Begin?</span>
+      <h2>Book Your <span>Appointment</span> Today</h2>
+      <p>Experience the luxury of Bombay Hair Art. Your transformation awaits.</p>
+      <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> <span>Book Appointment</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+        <p class="footer-tagline">Rajkot's premier luxury salon since 2014. Where every visit is a transformation and every client leaves feeling extraordinary.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/bombayhairart" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/bombayhairart" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919879534334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Haircut & Styling</a></li>
+          <li><a href="services.html">Hair Coloring</a></li>
+          <li><a href="services.html">Keratin Treatment</a></li>
+          <li><a href="services.html">Hair Spa</a></li>
+          <li><a href="services.html">Beard Grooming</a></li>
+          <li><a href="services.html">Bridal Package</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Alaukik Apartment, 1st Floor, Shop No-4, Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919879534334" style="color:var(--white-muted);">+91 98795 34334</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:info@bombayhairart.com" style="color:var(--white-muted);">info@bombayhairart.com</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 <span>Bombay Hair Art</span>. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919879534334?text=Hi%20Bombay%20Hair%20Art!%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<div class="mobile-action-bar" role="navigation" aria-label="Quick actions">
+  <div class="mobile-action-bar-inner">
+    <a href="tel:+919879534334" class="mob-action-btn call"><i class="fas fa-phone"></i><span>Call Now</span></a>
+    <a href="https://wa.me/919879534334" target="_blank" rel="noopener" class="mob-action-btn whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+    <a href="booking.html" class="mob-action-btn book"><i class="fas fa-calendar-check"></i><span>Book Now</span></a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  // Services page filter (uses category on article elements)
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('#services-grid .service-card').forEach(card => {
+        const cat = card.dataset.category;
+        if (filter === 'all' || cat === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

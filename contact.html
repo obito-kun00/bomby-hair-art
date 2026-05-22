@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bombay Hair Art in Rajkot. Find our address, phone number, email, and opening hours. Send us a message or visit us today." />
+  <title>Contact Us | Bombay Hair Art — Rajkot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loader-logo">Bombay <span>Hair Art</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p class="loader-tagline">Where Art Meets Elegance</p>
+</div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Book Appointment</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-top: var(--nav-height);">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1920&q=80');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-label">We'd Love to Hear From You</span>
+    <h1>Get In <span>Touch</span></h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span><i class="fas fa-chevron-right" style="font-size:0.7rem;"></i></span>
+      <span>Contact</span>
+    </nav>
+  </div>
+</section>
+
+<!-- CONTACT INFO CARDS -->
+<section class="section-pad-sm" style="background:var(--black-soft);">
+  <div class="container">
+    <div class="contact-info-cards" style="grid-template-columns: repeat(4,1fr);">
+      <div class="contact-info-card reveal delay-1">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Our Address</h4>
+        <p>Alaukik Apartment, 1st Floor,<br>Shop No-4, Kasturba Road,<br>Kasturba Rd, Rajkot, Gujarat 360001</p>
+      </div>
+      <div class="contact-info-card reveal delay-2">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <h4>Phone</h4>
+        <p><a href="tel:+919879534334" style="color:var(--gold);">+91 98795 34334</a><br><span style="font-size:0.78rem; color:var(--white-muted);">Daily: 9AM–9PM</span></p>
+      </div>
+      <div class="contact-info-card reveal delay-3">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <h4>Email</h4>
+        <p><a href="mailto:info@bombayhairart.com" style="color:var(--gold);">info@bombayhairart.com</a><br><span style="font-size:0.78rem; color:var(--white-muted);">Reply within 24 hours</span></p>
+      </div>
+      <div class="contact-info-card reveal delay-4">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h4>Opening Hours</h4>
+        <p>Monday – Sunday<br>9:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM + MAP -->
+<section class="section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="reveal-left">
+        <span class="section-label">Send a Message</span>
+        <h2 class="section-title" style="font-size:2rem;">We're Here to <span>Help</span></h2>
+        <div class="gold-divider"></div>
+        <p style="color:var(--white-muted); font-size:0.9rem; line-height:1.8; margin-bottom:32px;">Have a question about our services, pricing, or availability? Fill in the form and our team will get back to you within 24 hours.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="c-name">Full Name <span style="color:var(--gold);">*</span></label>
+              <input type="text" id="c-name" name="name" class="form-control" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-phone">Phone Number <span style="color:var(--gold);">*</span></label>
+              <input type="tel" id="c-phone" name="phone" class="form-control" placeholder="Your mobile number" required autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-email">Email Address</label>
+            <input type="email" id="c-email" name="email" class="form-control" placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-message">Your Message <span style="color:var(--gold);">*</span></label>
+            <textarea id="c-message" name="message" class="form-control" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:16px;">
+            <i class="fas fa-paper-plane"></i>
+            <span>Send Message</span>
+          </button>
+        </form>
+
+        <!-- Social Links -->
+        <div style="margin-top:40px; padding-top:32px; border-top:1px solid var(--black-border);">
+          <p style="font-size:0.85rem; color:var(--white-muted); margin-bottom:16px; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Follow Us</p>
+          <div style="display:flex; gap:12px;">
+            <a href="https://instagram.com/bombayhairart" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; padding:10px 18px; background:var(--black-card); border:1px solid var(--black-border); border-radius:var(--radius-sm); color:var(--white-muted); font-size:0.85rem; transition:var(--transition);" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--black-border)'; this.style.color='var(--white-muted)';">
+              <i class="fab fa-instagram"></i> @bombayhairart
+            </a>
+            <a href="https://facebook.com/bombayhairart" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; padding:10px 18px; background:var(--black-card); border:1px solid var(--black-border); border-radius:var(--radius-sm); color:var(--white-muted); font-size:0.85rem; transition:var(--transition);" onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--black-border)'; this.style.color='var(--white-muted)';">
+              <i class="fab fa-facebook-f"></i> /bombayhairart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP + HOURS -->
+      <div class="reveal-right">
+        <div class="map-wrap" style="margin-bottom:24px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0!2d70.7553!3d22.3039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca2b9b5b5b5b%3A0xabcdef1234567890!2sBombay%20Hair%20Art!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bombay Hair Art — Kasturba Road, Rajkot"
+            aria-label="Google Map showing Bombay Hair Art on Kasturba Road, Rajkot">
+          </iframe>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title"><i class="fas fa-clock" style="margin-right:8px;"></i>Business Hours</div>
+          <table class="hours-table">
+            <tbody>
+              <tr><td>Monday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Tuesday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Wednesday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Thursday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Friday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Saturday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Sunday</td><td>9:00 AM – 9:00 PM</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-card" style="margin-top:20px;">
+          <div class="info-card-title"><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>Find Us</div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-store"></i></div>
+            <div class="info-text">
+              <strong>Bombay Hair Art</strong>
+              <span>Alaukik Apartment, 1st Floor, Shop No-4,<br>Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span>
+            </div>
+          </div>
+          <div class="info-item" style="margin-top:12px;">
+            <div class="info-icon"><i class="fas fa-star" style="color:var(--gold);"></i></div>
+            <div class="info-text">
+              <strong>Google Rating</strong>
+              <span style="color:var(--gold); font-weight:600;">4.3 ★ &nbsp;</span><span style="color:var(--white-muted);">295 reviews</span>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Bombay+Hair+Art+Kasturba+Road+Rajkot" target="_blank" rel="noopener"
+             class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;">
+            <i class="fas fa-directions"></i> <span>Get Directions</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Ready to Visit?</span>
+      <h2>Book Your <span>Appointment</span> Now</h2>
+      <p>Don't wait — your perfect look is just one appointment away.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> <span>Book Appointment</span></a>
+        <a href="https://wa.me/919879534334" target="_blank" rel="noopener" class="btn-outline" style="border-color:#25D366; color:#25D366;" onmouseover="this.style.background='#25D366'; this.style.color='#fff';" onmouseout="this.style.background='transparent'; this.style.color='#25D366';"><i class="fab fa-whatsapp"></i> <span>WhatsApp Us</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+        <p class="footer-tagline">Rajkot's premier luxury salon since 2014. Where every visit is a transformation and every client leaves feeling extraordinary.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/bombayhairart" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/bombayhairart" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919879534334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Haircut & Styling</a></li>
+          <li><a href="services.html">Hair Coloring</a></li>
+          <li><a href="services.html">Keratin Treatment</a></li>
+          <li><a href="services.html">Hair Spa</a></li>
+          <li><a href="services.html">Beard Grooming</a></li>
+          <li><a href="services.html">Bridal Package</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Alaukik Apartment, 1st Floor, Shop No-4, Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919879534334" style="color:var(--white-muted);">+91 98795 34334</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:info@bombayhairart.com" style="color:var(--white-muted);">info@bombayhairart.com</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 <span>Bombay Hair Art</span>. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919879534334?text=Hi%20Bombay%20Hair%20Art!%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<div class="mobile-action-bar" role="navigation" aria-label="Quick actions">
+  <div class="mobile-action-bar-inner">
+    <a href="tel:+919879534334" class="mob-action-btn call"><i class="fas fa-phone"></i><span>Call Now</span></a>
+    <a href="https://wa.me/919879534334" target="_blank" rel="noopener" class="mob-action-btn whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+    <a href="booking.html" class="mob-action-btn book"><i class="fas fa-calendar-check"></i><span>Book Now</span></a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

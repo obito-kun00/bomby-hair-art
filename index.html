@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bombay Hair Art — Rajkot's premier luxury salon. Expert hair styling, coloring, beard grooming, and skin treatments. Book your appointment today." />
+  <title>Bombay Hair Art | Premium Luxury Salon — Rajkot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     LOADING SCREEN
+     ============================================================ -->
+<div id="loading-screen">
+  <div class="loader-logo">Bombay <span>Hair Art</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p class="loader-tagline">Where Art Meets Elegance</p>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="Bombay Hair Art Home">Bombay <span>Hair Art</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Book Appointment</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-label">Rajkot's Premier Luxury Salon</p>
+    <h1 class="hero-title">
+      Where Art Meets
+      <span class="gold-text">Elegance</span>
+    </h1>
+    <p class="hero-subtitle">
+      Experience world-class hair styling, coloring, and grooming at Bombay Hair Art — where every visit is a transformation.
+      <br><span id="typing-text" style="color: var(--gold); font-weight: 600;"></span>
+    </p>
+    <div class="hero-actions">
+      <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> <span>Book Appointment</span></a>
+      <a href="services.html" class="btn-outline"><i class="fas fa-scissors"></i> <span>View Services</span></a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<section class="stats-bar" aria-label="Statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal delay-1">
+        <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-number" data-target="5000" data-suffix="+">0+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-number" data-target="15" data-suffix="+">0+</div>
+        <div class="stat-label">Expert Stylists</div>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <div class="stat-number" data-target="50" data-suffix="+">0+</div>
+        <div class="stat-label">Awards Won</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES PREVIEW
+     ============================================================ -->
+<section class="section-pad" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title" id="services-heading">Our <span>Signature</span> Services</h2>
+      <div class="gold-divider center"></div>
+      <p class="section-subtitle">From precision haircuts to luxurious spa treatments — every service is crafted to perfection by our expert team.</p>
+    </div>
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="service-card reveal delay-1">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Haircut and Styling" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-cut"></i></div>
+          <h3 class="service-card-title">Haircut & Styling</h3>
+          <p class="service-card-desc">Precision cuts tailored to your face shape and lifestyle. Our master stylists craft looks that turn heads.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹299 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="service-card reveal delay-2">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" alt="Hair Coloring" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="service-card-title">Hair Coloring</h3>
+          <p class="service-card-desc">Vibrant balayage, highlights, global color, and ombre — using premium international brands for lasting brilliance.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹1,499 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="service-card reveal delay-3">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80" alt="Keratin Treatment" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Hair</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-magic"></i></div>
+          <h3 class="service-card-title">Keratin Treatment</h3>
+          <p class="service-card-desc">Eliminate frizz and restore silky smoothness with our professional keratin treatments. Results last up to 6 months.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹3,999 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="service-card reveal delay-1">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Beard Grooming" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Beard</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-user-tie"></i></div>
+          <h3 class="service-card-title">Beard Grooming</h3>
+          <p class="service-card-desc">Shape, trim, and define your beard with expert precision. Hot towel shave and beard conditioning included.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹199 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="service-card reveal delay-2">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80" alt="Facial Treatment" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Skin</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-spa"></i></div>
+          <h3 class="service-card-title">Facial Treatment</h3>
+          <p class="service-card-desc">Rejuvenate your skin with our customized facials using premium skincare products for a radiant, youthful glow.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹599 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 6 -->
+      <article class="service-card reveal delay-3">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80" alt="Bridal Package" class="service-card-img" loading="lazy" />
+          <span class="service-badge">Bridal</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><i class="fas fa-crown"></i></div>
+          <h3 class="service-card-title">Bridal Package</h3>
+          <p class="service-card-desc">Complete bridal makeover — hair, makeup, skin prep, and styling for your most special day. Full-day luxury experience.</p>
+          <div class="service-card-meta">
+            <span class="service-price">₹9,999 onwards</span>
+            <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center; margin-top: 48px;" class="reveal">
+      <a href="services.html" class="btn-outline"><i class="fas fa-th-large"></i> <span>View All Services</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+     ============================================================ -->
+<section class="section-pad" style="background: var(--black-soft);" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title" id="why-heading">The <span>Bombay Hair Art</span> Difference</h2>
+      <div class="gold-divider center"></div>
+      <p class="section-subtitle">We combine artistry, expertise, and premium products to deliver an unmatched salon experience every single time.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal delay-1">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3 class="feature-title">Award-Winning Stylists</h3>
+        <p class="feature-desc">Our team of 15+ certified professionals have won over 50 industry awards and trained with top international academies.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <h3 class="feature-title">Premium Products Only</h3>
+        <p class="feature-desc">We exclusively use Wella, L'Oréal Professionnel, and Kerastase — the world's finest professional hair care brands.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="feature-title">Hygiene Guaranteed</h3>
+        <p class="feature-desc">Sterilized tools, single-use items, and hospital-grade sanitization protocols ensure your complete safety and comfort.</p>
+      </div>
+      <div class="feature-card reveal delay-4">
+        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+        <h3 class="feature-title">On-Time Service</h3>
+        <p class="feature-desc">We respect your time. Book an appointment and walk in to be served immediately — no waiting, no delays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section-pad testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">Client Love</span>
+      <h2 class="section-title" id="testimonials-heading">What Our <span>Clients Say</span></h2>
+      <div class="gold-divider center"></div>
+    </div>
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Bombay Hair Art completely transformed my look! Arjun understood exactly what I wanted and delivered beyond my expectations. The salon ambiance is absolutely stunning — feels like a 5-star experience. I've been coming here for 3 years and will never go anywhere else."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Kavya Sharma" class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">Kavya Sharma</div>
+                <div class="testimonial-role">Software Engineer, Rajkot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Got my beard groomed by Rahul and it was the best grooming experience of my life. The hot towel treatment, the precision trimming, the beard oil massage — every detail was perfect. This is the only place I trust for my grooming needs in Rajkot."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rohan Mehta" class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">Rohan Mehta</div>
+                <div class="testimonial-role">Business Owner, Rajkot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"I had my bridal package done here and it was absolutely magical. Priya's color work and Neha's facial treatment made me look and feel like a queen on my wedding day. Every guest complimented my look. Highly recommend the bridal package!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Ananya Patel" class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">Ananya Patel</div>
+                <div class="testimonial-role">Bride, Rajkot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" role="tablist" aria-label="Testimonial navigation">
+        <button class="slider-dot active" role="tab" aria-label="Testimonial 1"></button>
+        <button class="slider-dot" role="tab" aria-label="Testimonial 2"></button>
+        <button class="slider-dot" role="tab" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY PREVIEW
+     ============================================================ -->
+<section class="section-pad" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-label">Our Portfolio</span>
+      <h2 class="section-title" id="gallery-heading">Our <span>Work</span> Speaks</h2>
+      <div class="gold-divider center"></div>
+      <p class="section-subtitle">A glimpse into the transformations we create every day at Bombay Hair Art.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" data-title="Precision Haircut" data-category="haircut">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" alt="Precision Haircut" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Precision Haircut</div>
+          <div class="gallery-overlay-cat">Haircut</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" data-title="Balayage Color" data-category="color">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" alt="Balayage Color" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Balayage Color</div>
+          <div class="gallery-overlay-cat">Hair Color</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800&q=80" data-title="Luxury Styling" data-category="haircut">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80" alt="Luxury Styling" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Luxury Styling</div>
+          <div class="gallery-overlay-cat">Styling</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" data-title="Expert Coloring" data-category="color">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Expert Coloring" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Expert Coloring</div>
+          <div class="gallery-overlay-cat">Hair Color</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" data-title="Beard Grooming" data-category="beard">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Beard Grooming" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Beard Grooming</div>
+          <div class="gallery-overlay-cat">Beard</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80" data-title="Facial Treatment" data-category="facial">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Facial Treatment" loading="lazy" />
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-title">Facial Treatment</div>
+          <div class="gallery-overlay-cat">Facial</div>
+        </div>
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 48px;" class="reveal">
+      <a href="gallery.html" class="btn-outline"><i class="fas fa-images"></i> <span>View Full Gallery</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Ready for a Change?</span>
+      <h2>Ready for a <span>Transformation?</span></h2>
+      <p>Book your appointment today and let our expert stylists craft the perfect look for you.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> <span>Book Appointment</span></a>
+        <a href="tel:+919879534334" class="btn-outline"><i class="fas fa-phone"></i> <span>Call Now</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+        <p class="footer-tagline">Rajkot's premier luxury salon since 2014. Where every visit is a transformation and every client leaves feeling extraordinary.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/bombayhairart" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/bombayhairart" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919879534334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Haircut & Styling</a></li>
+          <li><a href="services.html">Hair Coloring</a></li>
+          <li><a href="services.html">Keratin Treatment</a></li>
+          <li><a href="services.html">Hair Spa</a></li>
+          <li><a href="services.html">Beard Grooming</a></li>
+          <li><a href="services.html">Bridal Package</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Alaukik Apartment, 1st Floor, Shop No-4,<br>Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <span><a href="tel:+919879534334" style="color:var(--white-muted);">+91 98795 34334</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span><a href="mailto:info@bombayhairart.com" style="color:var(--white-muted);">info@bombayhairart.com</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon–Sun: 9:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 <span>Bombay Hair Art</span>. All rights reserved. Crafted with <i class="fas fa-heart" style="color:var(--gold);"></i> in Rajkot.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button class="lightbox-close" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+  <img class="lightbox-img" src="" alt="" />
+  <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-counter"></div>
+</div>
+
+<!-- ============================================================
+     WHATSAPP FLOATING BUTTON
+     ============================================================ -->
+<a href="https://wa.me/919879534334?text=Hi%20Bombay%20Hair%20Art!%20I%20would%20like%20to%20book%20an%20appointment."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ============================================================
+     MOBILE BOTTOM ACTION BAR
+     ============================================================ -->
+<div class="mobile-action-bar" role="navigation" aria-label="Quick actions">
+  <div class="mobile-action-bar-inner">
+    <a href="tel:+919879534334" class="mob-action-btn call">
+      <i class="fas fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919879534334" target="_blank" rel="noopener" class="mob-action-btn whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="booking.html" class="mob-action-btn book">
+      <i class="fas fa-calendar-check"></i>
+      <span>Book Now</span>
+    </a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

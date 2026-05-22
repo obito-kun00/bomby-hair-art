@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your appointment at Bombay Hair Art, Rajkot. Choose your service, date, and time for a premium salon experience." />
+  <title>Book Appointment | Bombay Hair Art — Rajkot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loader-logo">Bombay <span>Hair Art</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p class="loader-tagline">Where Art Meets Elegance</p>
+</div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn-primary btn-sm"><span>Book Now</span></a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html" class="active">Book Appointment</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-top: var(--nav-height);">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="section-label">Reserve Your Spot</span>
+    <h1>Book <span>Appointment</span></h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span><i class="fas fa-chevron-right" style="font-size:0.7rem;"></i></span>
+      <span>Book Appointment</span>
+    </nav>
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="section-pad">
+  <div class="container">
+    <div class="booking-layout">
+
+      <!-- FORM -->
+      <div class="reveal-left">
+        <div class="booking-form-wrap">
+          <div style="margin-bottom:32px;">
+            <span class="section-label">Fill in your details</span>
+            <h2 class="section-title" style="font-size:1.8rem;">Confirm Your <span>Appointment</span></h2>
+            <div class="gold-divider"></div>
+            <p style="color:var(--white-muted); font-size:0.875rem; line-height:1.7;">Fill in the form below and we'll confirm your appointment within 30 minutes via WhatsApp or call.</p>
+          </div>
+
+          <form id="booking-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name <span>*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Arjun Mehta" required autocomplete="name" />
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number <span>*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 98765 43210" required autocomplete="tel" />
+                <span class="form-error" id="phone-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="e.g. arjun@email.com" autocomplete="email" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Select Service <span>*</span></label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="">— Choose a Service —</option>
+                <optgroup label="Hair Services">
+                  <option value="Haircut & Styling">Haircut & Styling — ₹299 onwards (45 min)</option>
+                  <option value="Hair Coloring">Hair Coloring — ₹1,499 onwards (2–3 hrs)</option>
+                  <option value="Keratin Treatment">Keratin Treatment — ₹3,999 onwards (3–4 hrs)</option>
+                  <option value="Hair Spa">Hair Spa — ₹799 onwards (1 hr)</option>
+                  <option value="Hair Smoothening">Hair Smoothening — ₹4,999 onwards (4–5 hrs)</option>
+                </optgroup>
+                <optgroup label="Beard Services">
+                  <option value="Beard Grooming">Beard Grooming — ₹199 onwards (30 min)</option>
+                </optgroup>
+                <optgroup label="Skin Services">
+                  <option value="Facial Treatment">Facial Treatment — ₹599 onwards (1 hr)</option>
+                </optgroup>
+                <optgroup label="Special Packages">
+                  <option value="Bridal Package">Bridal Package — ₹9,999 onwards (Full Day)</option>
+                </optgroup>
+              </select>
+              <span class="form-error" id="service-error"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="date">Preferred Date <span>*</span></label>
+                <input type="date" id="date" name="date" class="form-control" required />
+                <span class="form-error" id="date-error"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="time">Preferred Time <span>*</span></label>
+                <select id="time" name="time" class="form-control" required>
+                  <option value="">— Select Time —</option>
+                  <option value="09:00 AM">09:00 AM</option>
+                  <option value="09:30 AM">09:30 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="10:30 AM">10:30 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="11:30 AM">11:30 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="01:00 PM">01:00 PM</option>
+                  <option value="01:30 PM">01:30 PM</option>
+                  <option value="02:00 PM">02:00 PM</option>
+                  <option value="02:30 PM">02:30 PM</option>
+                  <option value="03:00 PM">03:00 PM</option>
+                  <option value="03:30 PM">03:30 PM</option>
+                  <option value="04:00 PM">04:00 PM</option>
+                  <option value="04:30 PM">04:30 PM</option>
+                  <option value="05:00 PM">05:00 PM</option>
+                  <option value="05:30 PM">05:30 PM</option>
+                  <option value="06:00 PM">06:00 PM</option>
+                  <option value="06:30 PM">06:30 PM</option>
+                  <option value="07:00 PM">07:00 PM</option>
+                </select>
+                <span class="form-error" id="time-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Special Requests</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Any special requests, allergies, or notes for our team..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:16px;">
+              <i class="fas fa-calendar-check"></i>
+              <span>Confirm Appointment</span>
+            </button>
+
+            <p style="text-align:center; margin-top:16px; font-size:0.8rem; color:var(--white-muted);">
+              <i class="fas fa-lock" style="color:var(--gold);"></i> Your information is secure and will never be shared.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- INFO SIDEBAR -->
+      <div class="booking-info reveal-right">
+        <div class="info-card">
+          <div class="info-card-title"><i class="fas fa-clock" style="margin-right:8px;"></i>Opening Hours</div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-sun"></i></div>
+            <div class="info-text">
+              <strong>Monday – Sunday</strong>
+              <span>9:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-moon"></i></div>
+            <div class="info-text">
+              <strong>Sunday</strong>
+              <span>9:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title"><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>Our Location</div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-store"></i></div>
+            <div class="info-text">
+              <strong>Bombay Hair Art</strong>
+              <span>Alaukik Apartment, 1st Floor, Shop No-4,<br>Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title"><i class="fas fa-phone" style="margin-right:8px;"></i>Contact Us</div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div class="info-text">
+              <strong>Call Us</strong>
+              <span><a href="tel:+919879534334" style="color:var(--gold);">+91 98795 34334</a></span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="info-text">
+              <strong>WhatsApp</strong>
+              <span><a href="https://wa.me/919879534334" target="_blank" rel="noopener" style="color:var(--gold);">Chat with us</a></span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-text">
+              <strong>Email</strong>
+              <span><a href="mailto:info@bombayhairart.com" style="color:var(--gold);">info@bombayhairart.com</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" style="background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05)); border-color: var(--glass-border);">
+          <div style="text-align:center;">
+            <i class="fab fa-whatsapp" style="font-size:2rem; color:#25D366; margin-bottom:12px; display:block;"></i>
+            <h4 style="color:var(--white); margin-bottom:8px; font-family:var(--font-heading);">Quick Booking via WhatsApp</h4>
+            <p style="font-size:0.82rem; color:var(--white-muted); margin-bottom:16px; line-height:1.6;">Prefer to book via WhatsApp? Send us a message and we'll confirm your slot instantly.</p>
+            <a href="https://wa.me/919879534334?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Bombay%20Hair%20Art." target="_blank" rel="noopener" class="btn-primary" style="width:100%; justify-content:center;">
+              <i class="fab fa-whatsapp"></i> <span>Book on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Bombay <span>Hair Art</span></a>
+        <p class="footer-tagline">Rajkot's premier luxury salon since 2014. Where every visit is a transformation and every client leaves feeling extraordinary.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/bombayhairart" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/bombayhairart" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919879534334" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Haircut & Styling</a></li>
+          <li><a href="services.html">Hair Coloring</a></li>
+          <li><a href="services.html">Keratin Treatment</a></li>
+          <li><a href="services.html">Hair Spa</a></li>
+          <li><a href="services.html">Beard Grooming</a></li>
+          <li><a href="services.html">Bridal Package</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Alaukik Apartment, 1st Floor, Shop No-4, Kasturba Road, Kasturba Rd, Rajkot, Gujarat 360001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+919879534334" style="color:var(--white-muted);">+91 98795 34334</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:info@bombayhairart.com" style="color:var(--white-muted);">info@bombayhairart.com</a></span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9:00 AM – 9:00 PM<br>Sun: 9:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 <span>Bombay Hair Art</span>. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919879534334?text=Hi%20Bombay%20Hair%20Art!%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<div class="mobile-action-bar" role="navigation" aria-label="Quick actions">
+  <div class="mobile-action-bar-inner">
+    <a href="tel:+919879534334" class="mob-action-btn call"><i class="fas fa-phone"></i><span>Call Now</span></a>
+    <a href="https://wa.me/919879534334" target="_blank" rel="noopener" class="mob-action-btn whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+    <a href="booking.html" class="mob-action-btn book"><i class="fas fa-calendar-check"></i><span>Book Now</span></a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
